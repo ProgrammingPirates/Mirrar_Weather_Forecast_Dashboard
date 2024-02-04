@@ -2,6 +2,12 @@
 
 - This is a single-page weather forecast application built using ReactJS. It allows users to enter a city name and view the current weather details as well as a 5-day forecast.
 
+
+
+![image](https://github.com/ProgrammingPirates/Mirrar_Weather_Forecast_Dashboard/assets/78801686/4ca108fa-cbde-4af6-922f-eaa61e1efe8d)
+
+
+
 ## Instructions
 
 - Clone the repository.
