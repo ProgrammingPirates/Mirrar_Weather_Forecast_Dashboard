@@ -8,9 +8,9 @@ const WeatherDetails = ({ data, unit }) => {
 
   // Render the weather details
   return (
-    <div className="weather-details">
+    <div className="cards">
       <h2>{data.name}, {data.sys.country}</h2>
-      <p>Temperature: {data.main.temp}°{unit === 'metric' ? 'C' : 'F'}</p>
+      <p >Temperature: {data.main.temp}°{unit === 'metric' ? 'C' : 'F'}</p>
       <p>Min/Max Temperature: {data.main.temp_min}°{unit === 'metric' ? 'C' : 'F'} / {data.main.temp_max}°{unit === 'metric' ? 'C' : 'F'}</p>
       <p>Humidity: {data.main.humidity}%</p>
       <p>Wind: {data.wind.speed} m/s, {data.wind.deg}°</p>

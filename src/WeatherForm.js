@@ -10,15 +10,16 @@ const WeatherForm = ({ city, setCity, unit, setUnit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='card' onSubmit={handleSubmit}>
       <input
+        class="inputs"
         type="text"
         placeholder="Enter city name"
         value={inputCity}
         onChange={(e) => setInputCity(e.target.value)}
       />
-      <button type="submit">Get Weather</button>
-      <label className='button'>
+      <button className='sumbit' type="submit">Get Weather</button>
+      <label  className='button2'>
         <input
           type="radio"
           name="unit"
@@ -28,7 +29,7 @@ const WeatherForm = ({ city, setCity, unit, setUnit }) => {
         />
         Celsius
       </label>
-      <label>
+      <label className='button3'>
         <input
           type="radio"
           name="unit"

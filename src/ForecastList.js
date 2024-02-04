@@ -10,7 +10,7 @@ const ForecastList = ({ data, unit }) => {
       <h2>5-Day Forecast</h2>
       {data && data.list ? (
         data.list.map((item) => (
-          <div key={item.dt} className="forecast-item">
+          <div key={item.dt} className="days cards">
             <p>Date: {item.dt_txt}</p>
             <p>Average Temperature: {item.main.temp}°{unit === 'metric' ? 'C' : 'F'}</p>
             <p>Description: {item.weather[0].description}</p>
